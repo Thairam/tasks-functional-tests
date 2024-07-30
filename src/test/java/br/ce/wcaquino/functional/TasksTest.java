@@ -17,8 +17,8 @@ public class TasksTest {
     System.setProperty("webdriver.chrome.driver", "C:/Users/thayr/dev/java/chromedriver-win64/chromedriver.exe");
 
     DesiredCapabilities cap = DesiredCapabilities.chrome();
-    WebDriver driver = new RemoteWebDriver(new URL("http://192.168.0.7:4444/wd/hub"), cap);
-    driver.navigate().to("http://192.168.0.7:8001/tasks");
+    WebDriver driver = new RemoteWebDriver(new URL("http://127.0.0.1:4444/wd/hub"), cap);
+    driver.navigate().to("http://172.26.128.1:8001/tasks");
     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
     return driver;
